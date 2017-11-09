@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import Main from './Main';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 
 const styles = {
@@ -13,7 +13,7 @@ const App = () => (
     </div>
     );
 
-render((<BrowserRouter>
+render((<HashRouter>
           <App />
-        </BrowserRouter>
+        </HashRouter>
       ), document.getElementById('root'));
