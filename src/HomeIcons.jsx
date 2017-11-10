@@ -3,11 +3,12 @@ import { Popup } from 'semantic-ui-react'
 
 var iconStyle = {
   marginTop: '2vh',
-  fontSize: '3vh',
+  fontSize: '5vh',
+  backgroundColor: '#000',
 };
 
 var divIconStyle = {
-  marginTop: '2vh',
+  marginTop: '5vh',
 };
 
 
@@ -15,7 +16,7 @@ export default class HomeIcons extends Component {
   render(){
     return (
 
-  <div style={ iconStyle } >
+  <div style={ divIconStyle } >
           <div style={ iconStyle }>
           <Popup
               trigger={<i class="devicon-github-plain colored"></i>}
@@ -66,7 +67,7 @@ export default class HomeIcons extends Component {
           <Popup
               trigger={<i class="devicon-jquery-plain colored"></i>}
               content='JQuery'
-          />
+          />&nbsp;&nbsp;
           <Popup
               trigger={<i class="devicon-react-original colored"></i>}
               content='ReactJS'
@@ -77,6 +78,10 @@ export default class HomeIcons extends Component {
           />
           </div>
           <div style={ iconStyle }>
+          <Popup
+              trigger={<i class="devicon-git-plain colored"></i>}
+              content='Git'
+          />&nbsp;&nbsp;
           <Popup
               trigger={<i class="devicon-webpack-plain colored"></i>}
               content='Webpack'

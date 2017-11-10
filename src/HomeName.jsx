@@ -4,18 +4,19 @@ import styled, { keyframes } from 'styled-components';
 var middleStyle = {
   textAlign: "center",
   color: 'white',
+  backgroundColor: '#000',
 };
 
 const mymove = keyframes`
-0%   {top: -10vh; opacity: 0;}
-93% {top: 1vh; opacity: 0,}
-94% {top: 0vh; opacity: 1,}
-95% {top: 1vh; opacity: .5,}
-96% {top: 0vh; opacity: 1,}
-97% {top: 1vh; opacity: .5,}
-98% {top: 0vh; opacity: 1,}
-100% {top: 1vh; opacity: .5,}
-101% {top: 0vh; opacity: 1,}
+0%   {top: 0vh; opacity: 0;}
+93% {top: 6vh; opacity: 0,}
+94% {top: 5vh; opacity: 1,}
+95% {top: 6vh; opacity: .5,}
+96% {top: 5vh; opacity: 1,}
+97% {top: 6vh; opacity: .5,}
+98% {top: 5vh; opacity: 1,}
+100% {top: 6vh; opacity: .5,}
+101% {top: 5vh; opacity: 1,}
 `;
 
 const MyName = styled.div`
@@ -26,11 +27,11 @@ font-variant: small-caps;
 font-style: italic;
 width: 100%;
 height: ;
-font-size: 15vw;
+font-size: 10vw;
 position: relative;
 animation: ${mymove} 6s ease-in-out;
 animation-fill-mode: forwards;
-padding-top: 15vh;
+padding-top: 10vh;
 `;
 
 export default class HomeName extends Component {

@@ -18,6 +18,7 @@ var dropDownHeaderStyle = {
 };
 
 const DropdownExampleDivider = () => (
+  <span>
   <Dropdown style={ dropDownHeaderStyle } text='J. Graves Portfolio' icon='list layout' floating labeled button className='icon'>
     <Dropdown.Menu>
       <Dropdown.Item style={ sectionStyle }><Link to='/' style={ linkStyle }><Icon loading name='home' />Home</Link></Dropdown.Item>
@@ -25,6 +26,8 @@ const DropdownExampleDivider = () => (
       <Dropdown.Item style={ sectionStyle }><Link to='/Portfolio' style={ linkStyle }><Icon name='factory' />Portfolio</Link></Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
+  </span>
+
 )
 
 export default DropdownExampleDivider

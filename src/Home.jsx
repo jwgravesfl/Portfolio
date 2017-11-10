@@ -8,6 +8,7 @@ var middleStyle = {
   height: "35%",
   textAlign: "center",
   color: 'white',
+  backgroundColor: '#000',
 };
 
 export default class Home extends Component {

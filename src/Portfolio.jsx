@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {  Grid, Header, Segment, Card, Icon, Image } from 'semantic-ui-react'
+import {  Grid, Header, Card, Image } from 'semantic-ui-react'
 
-var cardStyle = {
-      height: '5vh',
+var divStyle = {
+      backgroughColor: '#000',
 };
 
   const style = {
@@ -28,7 +28,7 @@ var cardStyle = {
 export default class Portfolio extends Component {
   render() {
     return (
-      <div>
+      <div style={ divStyle }>
         <section>
             <Header
               centered
@@ -73,33 +73,6 @@ export default class Portfolio extends Component {
                       </Card.Description>                      
                     </Card.Content>
                 </Grid.Column>
-
-
-              <Grid.Column style={ segmentStyle }>
-                <Segment>
-                    <Card centered>
-                      <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png' />
-                    <Card.Content>
-                      <Card.Description>
-                        Matthew is a musician living in Nashville.
-                      </Card.Description>
-                    </Card.Content>
-                  </Card>
-                </Segment>
-              </Grid.Column>
-              <Grid.Column style={ segmentStyle }>
-                <Segment>
-                    <Card centered>
-                      <Image src='https://react.semantic-ui.com/assets/images/avatar/large/matthew.png' />
-                    <Card.Content>
-                      <Card.Description>
-                        Matthew is a musician living in Nashville.
-                      </Card.Description>
-                    </Card.Content>
-                  </Card>
-                </Segment>
-              </Grid.Column>
-
             </Grid>
         </section>
       </div>

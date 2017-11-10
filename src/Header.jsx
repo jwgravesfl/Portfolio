@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import Navigation from './Navigation1'
+import SocialLinks from './SocialLinks'
 
-var sectionStyle = {
+var socialLinksStyle = {
+  textAlign: 'right',
 
 };
 
 export default class Resume extends Component {
   render() {
     return (
-      <div style={sectionStyle}>
-            <Navigation />
-            Test
-
+      <div>
+          <Navigation />
+          <SocialLinks style={ socialLinksStyle } />
       </div>
 
     )
